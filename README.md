@@ -27,3 +27,11 @@ git push -u origin main
 ### nueva modificados
 /se sube desde vscode
 
+### ramas
+
+```
+
+git branch // ver ramas
+git branch -m nueva rama
+git checkout nombre_de_rama 
+```git
