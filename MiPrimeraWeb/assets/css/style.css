@@ -1,0 +1,85 @@
+        /* ESPECIFIDAD: 1- ID > 2- CLASES > 3- ETIQUETAS */
+    /*1 forma: etiquetas (a todas las etiquetas)*/
+    /* el ultimo estilo es el que prevalece*/
+
+    p {
+        color: blue;/*color al texto*/
+        font-size: 18px;/*tamaño al texto*/
+    }
+
+    h2 {
+    background-color: chocolate; /*color de fondo*/
+    }
+
+    p,h2 {
+        color: green; /*aplica a ambas etiquetas*/
+        
+    }
+
+    h3{
+        color:violet;
+    }
+
+    /*2 - Clases (.class) (1 o mas de una)*/
+    .parrafos{
+        color: red;
+        font-size: 20px;
+    }
+    .general{
+        background-color: yellow;      
+    }
+    .titulos{
+        text-align: center;/*centrar texto*/
+        font-size: 32px;
+    }
+    .contenedor{
+        width: 500px;
+        margin: 0px auto; /*centrar caja*/
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center;/*centrar texto*/
+    }
+    .textomid{
+        font-size: 18px;
+        text-align: center;
+        color: black;
+    }
+        #abuelo{
+            font-size: 20px;
+            text-align: center;/*centrar texto*/
+            color: lightcoral;
+        }
+        #hijo{
+            font-size: 24px;
+        }
+
+        .thead1{
+            background-color: aliceblue;
+        }
+        div{
+            text-align: center;
+        }
+        .tabla1{
+            background-color: lightpink;
+            margin:0px auto; /*centrar tabla*/
+        }
+        .tabla2{
+            background-color: lightgreen;
+            margin:0px auto; /*centrar tabla*/
+        }
+        #caja1{
+            width: 400px;
+            height: 400px;
+            background-color: antiquewhite;
+            border: 1px solid;
+            padding: 20px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    .proyect{
+        width: 40px;
+        height: 40px;
+        background-color: blueviolet;
+        margin: 20px;/*separacion continua*/   
+    }

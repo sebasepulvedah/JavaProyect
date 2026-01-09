@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JavaScript</title>
+</head>
+<body>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre">
+    <script>    
+        /*funciones*/
+        //puede o no llevar parametros
+        let mensaje = "Hola, bienvenidos";//variable global
+        //saludar("Israel, 45) //particular de js, llamar a la funcion antes de ser creada
+
+        function saludar(nombre, edad) {
+            console.log("hola " + nombre + " Tienes " + edad + " Años");
+            console.log(mensaje);
+            let mensaje_local = "esto es una variable local";//scope local
+            console.log(mensaje_local);
+
+        }
+        //llamando a la funcion con argumentos
+        saludar("Sebastian", 36);
+        //console.log(mensaje_local); no imprime poprque esta fuera de la funcion.
+
+        //** funciones anonimas*/
+        //Generalmente, las funciones anónimas se asignan a variables declaradas como constantes
+        const suma = function (a, b) { return a + b }
+        const suma2 = (a, b) => { return a + b } //Funciones Flechas =>
+
+        const resta = function (a, b) { return a - b }
+        console.log( suma(15,20) ) // retorna 35
+        console.log( suma2(25,20) ) // retorna 35
+        console.log( resta(15,5) ) // 10
+        console.log(suma);// imprime -> function (a, b) { return a + b }
+
+        //callback
+        function operacionAsincrona(callback) { //callback = miCallback
+        // Realizar una operación asincrónica
+        // Una vez que la operación se haya completado, llamar al callback
+        callback();
+        }
+        function miCallback() {
+        console.log("La operación asincrónica se ha completado.");
+        }
+        operacionAsincrona(miCallback);
+
+    </script>
+</body>
+</html>

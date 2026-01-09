@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo2</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #abuelo{
+            font-size: 20px;
+            text-align: center;/*centrar texto*/
+            color: lightcoral;
+        }
+        #hijo{
+            font-size: 24px;
+        }
+
+        .thead1{
+            background-color: aliceblue;
+        }
+        div{
+            text-align: center;
+        }
+        .tabla1{
+            background-color: lightpink;
+            margin:0px auto; 
+        }
+        #caja1{
+            width: 400px;
+            height: 400px;
+            background-color: antiquewhite;
+            border: 1px solid;
+            padding: 20px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .cajas{
+            width: 40px;
+            height: 40px;
+            background-color: blueviolet;
+            margin: 20px;/*separacion continua*/   
+        }
+    </style>
+</head>
+<body>
+    <div id="abuelo">
+        <div id="padre">
+            <p id="hijo"> esto es un texto</p>
+        </div>
+    </div>
+    <div>
+        <table class="tabla1">
+            <thead class="thead1">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Amarillo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Blanco</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="caja1">
+        <div class="cajas"></div>
+        <div class="cajas"></div>
+        <div class="cajas"></div>
+    </div>
+</body>
+</html>

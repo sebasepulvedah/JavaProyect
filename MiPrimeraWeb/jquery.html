@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+    <h1>Usando JQuery</h1>
+    <a>Ir a contacto</a>
+    
+
+    <p id="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime impedit voluptatum quas reiciendis, magni eligendi necessitatibus velit ea tempora aliquam officia corrupti incidunt vel. Praesentium voluptatibus in blanditiis assumenda.</p>
+    <button type="button" id="btn1">Hide()</button>
+    <button type="button" id="btn2">Show()</button>
+    <button type="button" id="btn3">Toggle()</button>
+    <br><hr>
+    <p id="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime impedit voluptatum quas reiciendis, magni eligendi necessitatibus velit ea tempora aliquam officia corrupti incidunt vel. Praesentium voluptatibus in blanditiis assumenda.</p>
+    <button type="button" id="btn4">FadeIn()</button>
+    <button type="button" id="btn5">FadeOut()</button>
+    <button type="button" id="btn6">FadeToggle()</button>
+    <br><hr>
+    <p id="parrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime impedit voluptatum quas reiciendis, magni eligendi necessitatibus velit ea tempora aliquam officia corrupti incidunt vel. Praesentium voluptatibus in blanditiis assumenda.</p>
+    <button type="button" id="btn7">SlideDown()</button>
+    <button type="button" id="btn8">SlideUp()</button>
+    <button type="button" id="btn9">SlideToggle()</button>
+
+    <h2>De estilo</h2>
+    <p id="parrafo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime impedit voluptatum quas reiciendis, magni eligendi necessitatibus velit ea tempora aliquam officia corrupti incidunt vel. Praesentium voluptatibus in blanditiis assumenda.</p>
+    <button type="button" id="btn10">AddClass()</button>
+    <button type="button" id="btn11">RemoveClass()</button>
+    <button type="button" id="btn12">CSS()</button>
+    <br>
+    <h2>Manipulacion</h2>
+    <button type="button" id="btn13">After()</button>
+    <button type="button" id="btn14">Before()</button>
+    <button type="button" id="btn15">Append()</button>
+    <button type="button" id="btn16">HTML()</button>
+    <button type="button" id="btn17">Val()</button>
+    <br>
+    <div id="seccionContacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <p id="parrafo5">se puede scrollear a cualquier contacto</p>
+    </div>
+<!--boton de comportamientos--->
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <!--<script src="assets/js/jquery.js"></script>
+        
+        /*
+        $(function(){
+        });
+        */
+/*
+        $(document).ready(function(){
+
+            $('a').click( function(e) {
+            // asociamos la animacion al click en un elemento <a>
+            $('html, body').animate({
+            scrollTop: $("#seccionContacto").offset().top
+            }, 2000);
+            } );
+            
+            // etiqueta, clase, id
+            //on -> event listener
+            $("button").on("click", function() {
+                $("h1").hide();
+            });
+            //De efecto 
+            //$().click(function(){});
+            $('#btn1').click(function(){
+                $('#parrafo1').hide();
+            });
+            $('#btn2').click(function(){
+                $('#parrafo1').show();
+                $('h1').show();
+            });
+            $('#btn3').click(function(){
+                $('#parrafo1').toggle();
+                $('h1').toggle();
+            });
+            //FadeIn y FadeOut
+            $('#btn4').click(function(){
+                //$('#parrafo2').fadeIn();
+                $('#parrafo2').fadeIn(5000);
+            });
+            $('#btn5').click(function(){
+                $('#parrafo2').fadeOut("slow");//fast
+            });
+            $('#btn6').click(function(){
+                $('#parrafo2').fadeToggle(3000);
+            });
+            //slide
+            $('#btn7').click(function(){
+                $('#parrafo3').slideDown();
+            });
+            $('#btn8').click(function(){
+                $('#parrafo3').slideUp();
+            });
+            $('#btn9').click(function(){
+                $('#parrafo3').slideToggle();
+            });
+            /*
+        
+        
+        
+        });/*CSS*/
+        /*
+        -->
+</body>
+</html>

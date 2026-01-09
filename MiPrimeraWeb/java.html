@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script src="assets/js/miscript.js"></script>
+    <script>
+        //esto es un comentario
+        /* esto es un 
+        bloque
+        de comentario
+        */
+        const nacionalidad = "Argentina"; // iniicializar constante
+        const PI = 3.1416; // iniicializar constante
+        const GRAVEDAD = 9.8; // SIEMPRE EN MAYUSCULAS
+
+        var edad = 25; // inicializar variable generica
+        edad = 30; // reasignar variable
+        edad = "treinta"; // reasignar variable con otro tipo de dato
+
+        let nombre = "Juan"; // inicializar variable de alcance local
+        let x = 10;
+        let y = 5;
+        let suma = x + y;
+        console.log(suma);
+        console.log(nombre + " " + suma);
+        // imprime 15 en la consola
+
+        let numero1;
+        numero1 = 21;
+        console.log(nombre + " " + numero1);
+        var miVariable;
+        let nombreCompleto;
+        const numeroDeTelefono = "";
+        alert("¡Hola JavaScript!");
+        confirm("¿Está seguro de eliminar este elemento?");
+        //prompt capturar un dato por teclado
+        nombre = "juan";
+        let mensaje = `Hola, ${nombre}!`;
+        console.log(mensaje);
+        nombre = prompt("Por favor, ingrese su nombre:") // almacenar la variable
+        edad = prompt("Por favor ingrese su edad")
+        console.log("Hola " + nombre + " tienes " + edad + " años.");//imprimir en consola 
+        console.log("Hola ${nombre} tienes ${edad} años.");
+        console.log('Hola ${nombre} tienes ${edad} años.');
+        console.log(`Hola ${nombre} tienes ${edad} años.`); 
+        
+        
+    </script>
+</body>
+</html>

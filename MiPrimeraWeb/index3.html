@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expresiones aritmeticas</title>
+</head>
+<body>
+    <h1>Expresiones Aritmeticas</h1>
+    <p>suma(+); resta(-); multiplicacion(*); division(/); restp(%); exponente(**)</p>
+    <script>
+        //prompt siempre captura un string o cadena de texto
+        let numero1 =  parseInt(prompt("Ingresar el primer numero"));
+        let numero2 = prompt("Ingrese el segundo numero");
+        numero2 = parseInt(numero2); //reasignar numero2 transforma un texto a numero
+        //suma
+        let suma = numero1 + numero2;
+        console.log(`La suma es: ${suma}`);
+        //resta
+        let resta = numero1 - numero2;
+        console.log(`La resta es: ${resta}`);
+        //division, al dividir por 0 da infinity
+        let division = numero1 / numero2;
+        console.log(`La division es: ${division}`);
+        //rest0
+        let resto = numero1 % numero2;
+        console.log(`el resto es: ${resto}`);
+        // Resto: 2
+        /**COMPARACION (==)*/
+        console.log(numero1 == numero2);
+        /**DESIGUALDAD//*/
+        console.log(numero1 != numero2);
+        /*INCREMETO
+        numero1 = numero1 + 10; // numero1 = 10 + 1 es 11
+        numero1 += 1; // numero1 = 11 + 1 es 12
+        numero1++; // numero1 = 12 + 1 es 13 ;: siempre suma 1 al valor anterior
+        console.log(numero1);
+        /*DECREMENTO
+        numero2 = numero2 - 10 // numero 2 = 20 - 10  es 10
+        numero2 -= 1; // numero2 = 10 - 1 es 9
+        numero2--; //  numero2 = 9 - 1 es 8.
+        console.log(numero2);*/
+        /**
+         * operadores logicos
+         * x=10 y =20
+         * OR (||) -> o -> cualquiera de las condiociones debe ser verdadera
+         * * AND (&&) -> y -> todas  las condiociones debe ser verdadera
+         * 
+         * 
+         * x<10 F; y<20 F ; (F && F) -> F; (F || F) - > F
+         * x<=10 V; y<20 F ; (V && F) -> F; (V || F) - > V
+         * x<=10 V; y=<20 V ; (V && V) -> V; (V || V) - > V*/
+        
+        let x = 10;
+        let y = 20;
+        console.log(x > 0 && y > 0);
+        // Devuelve true
+        console.log(x > 0 && y < 0);
+        // Devuelve false
+        console.log(x > 0 || y > 0);
+        // Devuelve true
+        console.log(x < 0 || y < 0);
+        // Devuelve false
+
+        /*** OPERADOR NOT(!):
+            verdadero -> Falso; !V=F ; !(V && V) = F
+            Falso -> Verdadero; !F=V; !(V && F) = V 
+            **/
+        
+        /** Condicionales
+        if (condición) {
+        // Este bloque de código se ejecutará si la condición es verdadera.
+        } else {
+        // Este bloque de código se ejecutará si la condición es falsa.
+        }
+        */
+        121
+        let menoredad = 17;
+        if (menoredad <= 18) {
+        console.log("Menor de edad");
+        } else {
+        console.log("Mayor de edad");
+        }
+
+        let mayordeedad = 18;
+        if (mayordeedad >= 18) {
+        console.log("Mayor de edad");
+        } else {
+        console.log("Menor de edad");
+        }
+
+        let hora = 13;
+
+        if (hora < 12) {// 13< 12 -> F
+            console.log("Buenos días");
+        } else {
+            console.log("Buenas tardes");
+        }
+
+        if (hora >= 12) {// 13 >= 12 -> V
+            console.log("Buenos tardes");
+        } else {
+            console.log("Buenas días");
+        }
+
+        let edad = 25;
+        let tieneLicencia = true;
+        if (edad >= 18 && tieneLicencia) {
+        console.log("puedes conducir legalmente.");
+        } else {
+        console.log("No cumplis con los requisitos para conducir.");
+        }
+        let esEstudiante = false;
+        let esEmpleado = true;
+        if (esEstudiante || esEmpleado) {
+        console.log("Tenes acceso a descuentos especiales.");
+        } else {
+        console.log("No tenes acceso a descuentosespeciales.");
+        }
+        /** Switch*/
+        switch (edad) {
+            case 17:
+                console.log("Tienes 17 años, tienes que estar acompañado")
+                break;
+            case 18:
+                console.log("Tienes 18 años");
+                break;
+            default:
+                console.log("Es menor de edad, no puede entrar") 
+                break;
+        }
+        let resultado = (numero1 < numero2) ? "numero1 es menor que numero2" : "numero1 es mayor o igual que numero2";
+        
+        if (numero1 < numero2) {
+            resultado = "numero1 es menor que numero2";
+        } else {
+            resultado = "numero1 es mayor o igual que numero2";
+        }
+        console.log(resultado);
+
+
+    </script>
+</body>
+</html>

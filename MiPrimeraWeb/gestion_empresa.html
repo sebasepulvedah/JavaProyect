@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTION DE EMPRESA::</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+     <!--boton de comportamientos <div>
+        <h1>Gestion de usuarios</h1>
+        <form action="" method="post" id="formularioUsuario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad"><br>
+            <button type="submit">Agregar usuario</button>
+        </form>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuarios">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script>
+        $(function(){
+            $('#formularioUsuario').on("submit", function(evento) {
+                evento.preventDefault();//1.- evite la recarga
+                //2.- capturar los datos
+                const nombre = $('#nombre').val();
+                const edad = $('#edad').val();
+                //3.- adicionar a la tabla con append
+                $('#tablaUsuarios').append(`
+                <tr>
+                    <td>${nombre}</td>
+                    <td>${edad}</td>
+                    <td>acciones</td>
+                </tr>
+                `);
+                //4.- limpiar los inputs
+                $('#nombre').val("");
+                $('#edad').val("");
+
+            });
+        //fin document
+        });
+    </script>--->
+    
+        <h1>Gestion de Usuarios</h1>
+        <div class="container mt-4">
+        <h3 class="mb-3">Registro de Usuarios</h3>
+
+    <form id="formularioUsuario" class="row g-3">
+        <div class="col-md-6">
+            <label class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Edad</label>
+            <input type="number" id="edad" class="form-control" required>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </div>
+    </form>
+
+        <div class="container mt-4">
+            <table class="table table-bordered table-hover" id="tablaUsuarios">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas dinámicas -->
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+    <script>
+
+
+
+        $(function () {
+    let cant_usuarios = 0;
+
+    $('#formularioUsuario').on("submit", function (e) {
+        e.preventDefault();
+
+        const nombre = $('#nombre').val();
+        const edad = $('#edad').val();
+
+        $('#tablaUsuarios tbody').append(`
+            <tr id="tr_${cant_usuarios}">
+                <td>${nombre}</td>
+                <td>${edad}</td>
+                <td>
+                    <button class="btn btn-danger btn-sm btn-eliminar">Eliminar</button>
+                    <button class="btn btn-warning btn-sm btn-editar">Editar</button>
+                </td>
+            </tr>
+        `);
+
+        cant_usuarios++;
+
+        $('#formularioUsuario')[0].reset();
+    });
+
+    $('#tablaUsuarios').on('click', '.btn-eliminar', function () {
+        $(this).closest('tr').remove();
+    });
+
+    $('#tablaUsuarios').on('click', '.btn-editar', function () {
+        const fila = $(this).closest('tr');
+        $('#nombre').val(fila.find('td').eq(0).text());
+        $('#edad').val(fila.find('td').eq(1).text());
+        fila.remove();
+    });
+});
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

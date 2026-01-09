@@ -1,0 +1,37 @@
+.body { /* Estilos generales para el cuerpo de la página */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.header { /* Estilos para el encabezado */
+    background-color: hsl(0, 0%, 20%);
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+nav ul { /* Eliminar los puntos de la lista y usar flexbox para el menú */
+    list-style-type: none;
+    display: flex;
+}
+nav ul li { /* Espaciado entre los elementos del menú */
+    margin-right: 20px;
+}
+nav ul li:last-child { /* Eliminar el margen derecho del último elemento */
+    margin-right: 0;
+}
+nav ul li a{ /* Estilos para los enlaces de navegación */
+    text-decoration: none;
+    color: #0adc18;
+    font-weight: bold;
+}
+nav a:hover{/* Efecto hover para los enlaces de navegación */
+    color: rgb(34, 0, 255);
+}
+
+.nava1{/* Efecto hover para los enlaces de navegación */
+    color: rgb(157, 8, 8);
+}
+

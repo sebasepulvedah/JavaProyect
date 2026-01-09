@@ -1,0 +1,10 @@
+.fboxtop{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+.fboxmid{
+            display:flex;
+            flex-direction: row;
+            justify-content: right;
+        }

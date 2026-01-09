@@ -1,0 +1,4 @@
+//comentario
+/* bloque de 
+comentario
+*/

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Practice</title>
+    <style> 
+    /*CSS reset settings here*/
+    * {
+        margin: 20px;
+        padding: 10px;
+    }
+    #wrapper {
+        width: 950px;
+        background-color: lightgray;
+        margin: 0px auto;
+    }
+    #header {
+        min-height: 150px;
+        background-color: lightgreen;
+        margin: 10px;
+        padding: 5px;
+    }
+    #navigation {
+        min-height: 420px;
+        width: 200px;
+        background-color: lightblue;
+        float: left;
+        padding: 5px 5px;
+        margin: 10px;      
+    }
+    #main_content {
+        min-height: 420px;
+        width: 700px;
+        background-color: lightcoral;
+        display: flex;
+        flex-wrap: wrap;/*permite que el contenido se ajuste a la siguiente línea*/
+        justify-content: space-between;
+        margin: 14px;
+        padding: 8px;
+    }
+    .subcontents {
+        min-height: 200px;/*alto fijo*/
+        width: 210px; /*ancho fijo*/
+        background-color: lightyellow; 
+        margin: 5px;/* margen externo */
+        padding: 4px;/* espacio interno */
+        display: flex; /*establece un contenedor flex*/
+        flex-direction: column-reverse; /*cambia la dirección del contenido*/
+    }
+    #advertisement {
+        min-height: 120px;
+        width: 660px;
+        background-color: lightpink; /*color de fondo*/
+        display: flex;/*establece un contenedor flex*/
+        justify-content: right;/*alinear al contenido a la derecha*/
+        margin: 20px 15px 40px 15px; /*margen superior, derecho, inferior e izquierdo*/
+        
+        
+        @media screen and (min-width: 35.5em) {
+            #navigation, #main_content {
+            align-self: flex-start;
+            vertical-align: top;
+            margin: 0px;
+            }
+    }   
+    }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="navigation"></div>
+        <div id="main_content">
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div class="subcontents"></div>
+            <div id="advertisement"></div>
+        </div>
+    </div>
+</body>
+</html>

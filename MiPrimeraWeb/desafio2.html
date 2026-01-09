@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--<script src="assets/js/bootstrap.bundle.min.js"></script>-->
+    <style>
+        #header{
+            background-color: darkblue;
+        }
+        #aside{
+            height:300px;
+        }
+        #main{
+            background-color: rgb(76, 0, 255);
+        }
+        #sections{
+            height:400px;
+        }
+        #footer{
+            background-color: lightgreen;
+        }
+        /*
+        Utilice las siguientes clases para esta actividad
+            .col-{numero, blank, auto}
+            .row
+            .bg-{color}
+            .p-{numero} (el espaciado (paddings) puede ser aplicado en diferentes formas. Más detalles aquí).
+            .m-{number} (lo mismo que el atributo anterior)
+            .text-{color}
+            .container
+            .offset-{numero}
+        */
+        
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div id="header" class="bg-primary-emphasis mb-3">
+            <div class="p-4" class="text-light">
+                <div class="mx-5 p-3">Header</div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div id="main" class="col col-md-8 col-lg-2 ms-2 text-white col">Main
+                <div id="sections" class="row text-black">
+                    <div class="col bg-white me-2">Article</div>
+                    <div class="table-responsive">
+                        <table class="table table-primary">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Column 1</th>
+                                    <th scope="col">Column 2</th>
+                                    <th scope="col">Column 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="">
+                                    <td scope="row">R1C1</td>
+                                    <td>R1C2</td>
+                                    <td>R1C3</td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Item</td>
+                                    <td>Item</td>
+                                    <td>Item</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="col bg-white ms-2">Article</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="text-black-50">
+            <div>Footer</div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

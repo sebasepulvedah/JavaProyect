@@ -1,0 +1,12 @@
+
+//comando de config
+git config --global user.name "Sebastián Sepúlveda" 
+git config --global user.email "seba.sepulvedah@gmail.com"
+
+echo "# JavaProyect" >> README.md // ejecutar comando - crea archivo JavaProyect y agrega informacion readme.md en la bash. 
+git init // inicializa el repositorio
+git add . README.md // tomara todos los archivos y los agregara al stage. (zona de preparación)
+git commit -m "first commit" // etiquetar el paquete
+git branch -M main
+git remote add origin https://github.com/sebasepulvedah/JavaProyect.git
+git push -u origin main

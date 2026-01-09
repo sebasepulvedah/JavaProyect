@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="mi-boton">Haz clic aquí</button>
+    <p id="p1">esto es un parrafo</p>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre">
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad">
+
+    <script>
+        //eventos basicos
+    const boton = document.getElementById('mi-boton');
+    const parrafo = document.getElementById('p1');
+    const nombre = document.getElementById('nombre');
+    const edad = document.getElementById('edad');
+    
+    boton.addEventListener('click', function() {
+        console.log('¡Hola, mundo!');
+    });
+    boton.addEventListener('dblclick', () => { //funcion arrow =>
+    console.log('Has hecho doble clic en el botón');
+    });
+
+    parrafo.onmousemove = () => {console.log("on mouse move")}
+    parrafo.onclick = ()  => {console.log("Click")} 
+
+    nombre.onkeyup = () => {console.log("On key up en nombre")}
+    nombre.onkeydown = () => {console.log("On key down en nombre")}
+
+    edad.addEventListener('change', function(evento){
+        const valor = evento.target.value;
+        console.log('el nuevo valor es: ' +valor)
+    }); // agregar nombre de la variable 
+
+
+    
+    </script>
+</body>
+</html>

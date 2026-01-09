@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JavaScript</title>
+</head>
+<body>
+    <div id="mi-id" class="mi_clase">
+        <label for="nombre2">Nombre:</label>
+        <input type="text" name="nombre2" id="nombre2">
+    </div>
+
+    <form id="mi-formulario" class="mi_clase">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+
+        <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+    </form>
+
+    <div>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <input type="button" value="Seleccionar" onclick="funcion_querySelectorAll()">
+    </div>
+    <script>
+        //acceder al elemento html
+        const miNombre = document.getElementById("nombre2");
+        const miElemento = document.getElementById('mi-id');
+        const miClase = document.getElementsByClassName('mi_clase');
+        const miTag = document.getElementsByTagName('input');
+        const elementoQS = document.querySelector("nombre2");//entrega el primer elemento
+
+        miNombre.value = "Israel Palma";
+        //miElemento.innerHTML += "<p> esto es un parrafo</p>";
+
+        // Crear un elemento <p>
+        const nuevoParrafo = document.createElement('p');
+        // Agregar contenido al elemento
+        nuevoParrafo.textContent = 'Este es un nuevo párrafo';
+
+        // Agregar el nuevo elemento como hijo del nodo padre
+        miElemento.appendChild(nuevoParrafo);
+
+        function mostrarDatos() {
+            // Obtener los valores de los campos de entrada
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+
+            // Mostrar los datos en la consola o realizar alguna acción con ellos
+            console.log('Nombre:', nombre);
+            console.log('Email:', email);
+        }
+
+        function funcion_querySelectorAll(){
+            const elementosUl =document.querySelectorAll('ul li');//coleccion de datos
+            elementosUl.length;//tamaño de la coleccion
+            elementosUl[0]//primer elemento
+            elementosUl[elementosUl.length-1]//ultimo elemento
+            
+            //recorrer nodo
+            elementosUl.forEach(elemento => {
+                console.log(elemento.textContent +" " +elemento.innerHTML );
+            });
+        }
+    </script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+    <div class="mb-3">
+        <label for="name class=form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" onclick="iniciarSesion()" class="btn btn-primary">Submit</button>
+    <script>
+        nombre = prompt("Por favor, ingrese su nombre:") // almacenar la variable
+        edad = prompt("Por favor ingrese su edad")
+        console.log("Hola " + nombre + " tienes " + edad + " años.");//imprimir en consola 
+
+        
+        const form = document.getElementById('myForm');
+        const user = "usuario123";
+        const pass = "claveSecreta";
+            function iniciarSesion() { 
+    
+            // Obtener los valores de los campos de entrada
+            const usuario = document.getElementById('name').value;
+            const contraseña = document.getElementById('password').value;
+            console.log('Nombre:', usuario);
+            console.log('Contraseña:', contraseña);
+            }
+        form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        // Evitar el envío del formulario por defecto
+        // Obtener los valores de los campos de entrada
+        const usuario = document.getElementById('name').value;
+        const contraseña = document.getElementById('password').value;
+        // Realizar acciones adicionales con los datos ingresados
+        console.log('Nombre:', usuario);
+        console.log('Contraseña:', contraseña);
+        if (name==user) {
+            console.log("Nombre correcto")
+        }else{
+            console.log("Error en el Ingreso de datos")
+        }
+
+        if (password==contraseña) {
+            console.log("Clave Correcta")
+        } else {
+            console.log("Error al Ingresar clave")
+        }
+        // Hacer algo más con los datos (enviar a un servidor, procesarlos, etc.)
+        });
+
+     
+
+    </script>
+</form>
+</body>
+</html>

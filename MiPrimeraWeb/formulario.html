@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario ::</title>
+</head>
+<body>
+    <div class="">
+        <p><span>Lorem ipsum dolor sit amet consectetur</span>, adipisicing elit. Aliquam nulla cum odit corporis porro! Illum natus explicabo rerum magni quasi deleniti ratione, quia labore in quisquam maiores autem, fuga porro.</p>
+    </div>
+    <main>
+        <section>
+            <!--get: datos visibles en la url  -->
+            <!--post: datos ocultos  -->
+            <!--id: identificador unico para el elemento html (estilo, funcionalidad)-->
+            <!--name:capturar datos ingresados -->
+            <form action="index.html" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+            
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="Mensaje">Mensaje:</label>
+                <textarea name="descripcion" id="descripcion" rows="5" cols="15"></textarea>
+                <br>
+                <select name="opciones" id="opciones">
+                    <option value="0">Seleccione una opcion</option>
+                    <option value="1">Java</option>
+                    <option value="2">HTML</option>
+                </select>
+                <br>
+                <input type="button" value="Enviar">  
+                <input type="submit" value="Enviar formulario">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

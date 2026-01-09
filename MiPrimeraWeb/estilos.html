@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS::</title>
+
+
+    
+<style>
+    /* ESPECIFIDAD: 1- ID > 2- CLASES > 3- ETIQUETAS */
+    /*1 forma: etiquetas (a todas las etiquetas)*/
+    /* el ultimo estilo es el que prevalece*/
+    p {
+        color: blue;/*color al texto*/
+        font-size: 18px;/*tamaño al texto*/
+    }
+
+    h2 {
+    background-color: chocolate; /*color de fondo*/
+    }
+
+    p,h2 {
+        color: green; /*aplica a ambas etiquetas*/
+        
+    }
+
+    /*2 - Clases (.class) (1 o mas de una)*/
+    .parrafos{
+        color: red;
+        font-size: 20px;
+    }
+    .general{
+        background-color: yellow;
+        
+    }
+
+    /*3 - ID (#id) espeficico para solo 1 elemento (1 sola vez por pagina)*/
+    #p4{
+    color:darkmagenta;
+    background-color: beige;
+    font-size: 25px !important; /*tiene mayor prioridad que los demas estilos*/
+    }   
+
+    #abuelo{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgba(61, 20, 211, 0.664);
+        color: white;
+    }
+
+</style>
+
+</head>
+<body>
+    <h2>Titulo 1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nesciunt. Cum ipsum quae asperiores provident accusantium error, magnam eveniet autem temporibus atque veritatis possimus in? Nostrum fugit tempora eaque nemo.</p>
+    <p class="parrafos">Parrafo 2</p>
+    <p class="parrafos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis perferendis voluptas distinctio non voluptates quisquam repudiandae ipsum fuga voluptate, est similique quod incidunt doloremque officia. Facere at illum quos nam. </p>
+    <h2 class="general">titulo 2</h2>
+    <h3 class="general">titulo 3</h3>
+
+    <p class="general" id="p4" style="font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate odio accusamus ullam perspiciatis neque molestias mollitia ad libero possimus fuga necessitatibus, velit, delectus eius vel perferendis nisi laborum enim.</p>
+
+    <div id="abuelo">
+        <div id="padre">
+            <p id="parrafo5">Parrafo 5</p>
+        </div>
+    </div>
+</body>
+</html>
+

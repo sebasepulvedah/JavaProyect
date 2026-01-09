@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos 2</title>
+    <style>
+        /* selector universal */
+        *{
+            color: rgb(94, 16, 117);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px; /*elimina margenes y paddings por defecto - reseteo elemntos por default*/
+            padding: 0px;
+        }
+        .clase1{
+            color:red;
+        }
+        .clase2{
+            color: lightcoral;
+            background-color: lime;
+        }
+        .clase1.clase2{ /* ambas clases aplicadas*/
+            color: blue;
+            background-color: violet;
+        }
+        footer{
+            background-color: slateblue;
+        }
+        #p1{
+            color: darkmagenta;
+            font-size: 22px;
+        }
+        /*probar especificidad con ul li a*/
+        /*media querys*/
+        /*small devices sm mayor o igual a 568px*/
+        @media screen and (max-width: 35.5em){
+            .clase2{
+            display: none; /*oculta el elemento*/
+            }
+        }
+    </style>
+</head>
+<body> 
+    <main>
+    <div class="clase1">
+        <h1 class="clase2">Estilos 2</h1>
+        <p class="clase1 clase2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut quis porro consequuntur eligendi, ut pariatur! Quos dolorem voluptate explicabo perspiciatis et odit impedit non at rem esse. Et, beatae!</p>
+    </div>
+    </main>
+    <footer>
+        <p>@ seba2026</p>
+    </footer>
+</body>
+</html>
