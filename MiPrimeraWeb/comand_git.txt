@@ -17,4 +17,7 @@ git add .
 git commit -m "HTML, CSS, JS"
 git push -u origin main
 
+//*nueva modificados*//
+/se sube desde vscode
+
 
