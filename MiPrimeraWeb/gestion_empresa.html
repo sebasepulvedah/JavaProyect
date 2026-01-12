@@ -10,54 +10,6 @@
 <body>
      <!--boton de comportamientos <div>
         <h1>Gestion de usuarios</h1>
-        <form action="" method="post" id="formularioUsuario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre"><br>
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad"><br>
-            <button type="submit">Agregar usuario</button>
-        </form>
-        <br>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="tablaUsuarios">
-                
-            </tbody>
-        </table>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-    <script>
-        $(function(){
-            $('#formularioUsuario').on("submit", function(evento) {
-                evento.preventDefault();//1.- evite la recarga
-                //2.- capturar los datos
-                const nombre = $('#nombre').val();
-                const edad = $('#edad').val();
-                //3.- adicionar a la tabla con append
-                $('#tablaUsuarios').append(`
-                <tr>
-                    <td>${nombre}</td>
-                    <td>${edad}</td>
-                    <td>acciones</td>
-                </tr>
-                `);
-                //4.- limpiar los inputs
-                $('#nombre').val("");
-                $('#edad').val("");
-
-            });
-        //fin document
-        });
-    </script>--->
-    
-        <h1>Gestion de Usuarios</h1>
         <div class="container mt-4">
         <h3 class="mb-3">Registro de Usuarios</h3>
 
