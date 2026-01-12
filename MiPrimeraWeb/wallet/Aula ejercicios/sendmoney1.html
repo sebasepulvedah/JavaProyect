@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #0e1114;
+        }
+        .mb-3 {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="p-3 mb-2 bg-dark text-white text-center">
+    <h2 class="mb-4">Enviar Dinero</h2>
+    </header>
+
+    <form>
+        <div class="mb-3" >
+            <label for="buscarTransferencia" class="form-label"> Buscar transferencia</label>
+            <input type="text" class="form-control" id="buscarTransferencia" placeholder="Ingrese nombre">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+    <br>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Sebastian  Sepulveda</h5>
+            <small>Banco Estado</small>
+            </div>
+            <p class="mb-1">CuentaRut</p>
+        </a>
+    </div>
+        <br>
+    <button onclick="myFunction()">Agregar usuario</button>
+
+<p id="Agregar"></p>
+
+<script>
+    function myFunction() {
+    let text;
+    let person = prompt("Ingresa tu nombre", "...");
+    if (person == null || person == "") {
+        text = "Cancelar mensaje.";
+    } else {
+        text = "Hola " + person + " Bienvenido al Wallet";
+    }
+    document.getElementById("Agregar").innerHTML = text;
+    }
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</body>
+</html>
