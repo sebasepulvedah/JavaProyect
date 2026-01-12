@@ -37,6 +37,8 @@ git push --delete testing2
 git checkout nombre_rama
 ##
 git branch  switch rama_nueva
+### traer los cambios de esa rama
+git merge feature/rama_ejemplo  
 ### Crear readmne
     $echo "# Pull Request" >> README.md 
 ### muestra la ruta donde esta 
